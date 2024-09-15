@@ -1,0 +1,58 @@
+\ProvidesPackage{notes}
+\usepackage{soul}
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\RR}{\field{R}} % real numbers
+\newcommand{\NN}{\field{N}} % natural numbers
+\newcommand{\CC}{\field{C}} % complex numbers
+\newcommand{\ZZ}{\field{Z}} % integers
+\newcommand{\QQ}{\field{Q}} % rationals
+
+\newcommand{\FF}{\field{F}} % field
+\newcommand{\Aa}{\field{A}} % affine space
+
+\newcommand{\inv}{^{-1}} % inverse
+\newcommand{\defeq}{\vcentcolon=} % definition
+\newcommand{\OO}{\mathcal{O}}
+
+%categories
+\newcommand{\cat}[1]{\mathbf{#1}}
+\newcommand{\catSet}{\cat{Set}}
+\newcommand{\catSch}{\cat{Sch}}
+\newcommand{\catCRing}{\cat{CRing}}
+
+
+% Opposite category
+\newcommand{\opp}{^{\text{op}}}
+% Sheaf related commands
+% poset of opens
+\newcommand{\open}{\text{Open}}
+% continuous maps
+\newcommand{\cont}{\text{Cont}}
+% constant sheaf
+\newcommand{\constSheaf}[1]{\underline{#1}}
+
+\newcommand{\Mor}{\text{Mor}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\id}{\text{id}}
+% Algebraic geometry
+\newcommand{\Spec}{\text{Spec}} 
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+
+% problem environments
+% use problem for automatic numbering, manualproblem
+% to manually number
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem*{problem*}{Problem}
+% \newtheorem{manualprobleminner}{Problem}
+% \newenvironment{manualproblem}[1]{
+%   \renewcommand\themanualprobleminner{#1}
+%   \manualprobleminner
+% }{\endmanualprobleminner}
+
+% TODO
+\newcommand{\todo}[1]{\hl{TODO:\@ #1}}
