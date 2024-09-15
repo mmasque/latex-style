@@ -6,9 +6,9 @@
 \newcommand{\CC}{\field{C}} % complex numbers
 \newcommand{\ZZ}{\field{Z}} % integers
 \newcommand{\QQ}{\field{Q}} % rationals
-
 \newcommand{\FF}{\field{F}} % field
 \newcommand{\Aa}{\field{A}} % affine space
+\newcommand{\PP}{\field{P}} % projective
 
 \newcommand{\inv}{^{-1}} % inverse
 \newcommand{\defeq}{\vcentcolon=} % definition
@@ -22,30 +22,38 @@
 
 
 % Opposite category
-\newcommand{\opp}{^{\text{op}}}
+\newcommand{\opp}{^{\operatorname{op}}}
 % Sheaf related commands
 % poset of opens
-\newcommand{\open}{\text{Open}}
+\newcommand{\open}{\operatorname{Open}}
 % continuous maps
-\newcommand{\cont}{\text{Cont}}
+\newcommand{\cont}{\operatorname{Cont}}
 % constant sheaf
 \newcommand{\constSheaf}[1]{\underline{#1}}
 
-\newcommand{\Mor}{\text{Mor}}
-\newcommand{\Hom}{\text{Hom}}
-\newcommand{\id}{\text{id}}
+\newcommand{\Mor}{\operatorname{Mor}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\id}{\operatorname{id}}
 % Algebraic geometry
-\newcommand{\Spec}{\text{Spec}} 
+\newcommand{\Spec}{\operatorname{Spec}} 
+\newcommand{\sh}[1]{\mathcal{#1}}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{proposition}{Proposition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{definition}{Definition}
+
+\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{rmk}{Remark}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{notation}{Notation}[chapter]
 
 % problem environments
 % use problem for automatic numbering, manualproblem
 % to manually number
-\theoremstyle{definition}
 \newtheorem{problem}{Problem}
 \newtheorem*{problem*}{Problem}
 % \newtheorem{manualprobleminner}{Problem}
