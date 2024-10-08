@@ -3,8 +3,11 @@
 
 \usepackage[margin=0.75in]{geometry}
 \usepackage{tikz-cd}
-\usepackage[adobe-utopia]{mathdesign}
+\usepackage{hyperref}
+\usepackage{cleveref}
+% \usepackage[adobe-utopia]{mathdesign}
 \usepackage[T1]{fontenc}
+\usepackage{eulervm}
 
 \tikzcdset{arrow style=math font}
 
@@ -28,7 +31,6 @@
 \newcommand{\catSch}{\cat{Sch}}
 \newcommand{\catCRing}{\cat{CRing}}
 
-
 % Opposite category
 \newcommand{\opp}{^{\operatorname{op}}}
 % Sheaf related commands
@@ -41,6 +43,7 @@
 
 \newcommand{\Mor}{\operatorname{Mor}}
 \newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
 \newcommand{\id}{\operatorname{id}}
 % Algebraic geometry
 \newcommand{\Spec}{\operatorname{Spec}} 
@@ -48,7 +51,10 @@
 \newcommand{\ch}{\operatorname{ch}}
 \newcommand{\td}{\operatorname{td}}
 \newcommand{\rk}{\operatorname{rk}}
-
+\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\Tors}{\operatorname{Tors}}
+\newcommand{\HN}{\operatorname{HN}}
+\newcommand{\gr}{\operatorname{gr}}
 % Ugly!
 \makeatletter
 \@ifclassloaded{report}{%
@@ -68,12 +74,12 @@
 \newtheorem{example}{Example}[\theoremnumbering]
 \newtheorem{notation}{Notation}[\theoremnumbering]
 
+\newtheorem{problem}{Problem}[\theoremnumbering]
+\newtheorem*{problem*}{Problem}
 \makeatother
 % problem environments
 % use problem for automatic numbering, manualproblem
 % to manually number
-\newtheorem{problem}{Problem}
-\newtheorem*{problem*}{Problem}
 % \newtheorem{manualprobleminner}{Problem}
 % \newenvironment{manualproblem}[1]{
 %   \renewcommand\themanualprobleminner{#1}
