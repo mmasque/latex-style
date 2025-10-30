@@ -1,14 +1,18 @@
 \ProvidesPackage{notes}
 \usepackage{soul}
 
-\usepackage[margin=0.75in]{geometry}
+% \usepackage[margin=0.75in]{geometry}
+\usepackage[a4paper, lmargin=1in, rmargin=1in, bmargin=0.9in, tmargin=0.9in]{geometry}
 \usepackage{tikz-cd}
 \usepackage{hyperref}
 \usepackage{cleveref}
 % \usepackage[adobe-utopia]{mathdesign}
-\usepackage[T1]{fontenc}
-\usepackage{eulervm}
-\usepackage{latex-style/quiver}
+% \usepackage{stickstootext}
+% \usepackage[stickstoo,vvarbb]{newtxmath}
+% \usepackage[T1]{fontenc}
+% \usepackage{eulervm}
+
+% \usepackage{latex-style/quiver}
 \tikzcdset{arrow style=math font}
 
 \newcommand{\field}[1]{\mathbb{#1}}
@@ -37,6 +41,8 @@
 \newcommand{\catCat}{\cat{Cat}}
 \newcommand{\catInfty}{\catCat_\infty}
 \newcommand{\sSet}{\cat{sSet}}
+\newcommand{\catGpd}{\cat{Gpd}}
+\newcommand{\catAb}{\cat{Ab}}
 
 \newcommand{\Fun}{\operatorname{Fun}}
 
@@ -51,6 +57,7 @@
 \newcommand{\constSheaf}[1]{\underline{#1}}
 % Cover category
 \newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Open}{\operatorname{Open}}
 
 \newcommand{\Mor}{\operatorname{Mor}}
 \newcommand{\Hom}{\operatorname{Hom}}
