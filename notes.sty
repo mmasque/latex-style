@@ -14,6 +14,11 @@
 % \usepackage{eulervm}
 
 % \usepackage{latex-style/quiver}
+
+
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\Large\bfseries}{}{0pt}{}
+
 \tikzcdset{arrow style=math font}
 
 \newcommand{\field}[1]{\mathbb{#1}}
@@ -88,6 +93,7 @@
 % Infinity cats
 \newcommand{\Sh}{\operatorname{Shv}}
 \newcommand{\CoSh}{\operatorname{CoShv}}
+\newcommand{\Map}{\operatorname{Map}}
 
 % Six functors
 \newcommand{\Corr}{\operatorname{Corr}}
@@ -102,23 +108,43 @@
 }{%
     \def\theoremnumbering{section}%
 }
+% numbering apart
+% \theoremstyle{plain}
+% \newtheorem{theorem}{Theorem}[\theoremnumbering]
+% \newtheorem{proposition}{Proposition}[\theoremnumbering]
+% \newtheorem{lemma}{Lemma}[\theoremnumbering]
+% \newtheorem{corollary}{Corollary}[\theoremnumbering]
+
+% \theoremstyle{definition}
+% \newtheorem{definition}{Definition}[\theoremnumbering]
+% \newtheorem{rmk}{Remark}[\theoremnumbering]
+% \newtheorem{example}{Example}[\theoremnumbering]
+% \newtheorem{notation}{Notation}[\theoremnumbering]
+
+% \newtheorem{problem}{Problem}[\theoremnumbering]
+% \newtheorem{problemnochapter}{Problem}
+% \newtheorem*{problem*}{Problem}
+
+% \newtheorem{question}{Question}[\theoremnumbering]
+
+% numbering together
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[\theoremnumbering]
-\newtheorem{proposition}{Proposition}[\theoremnumbering]
-\newtheorem{lemma}{Lemma}[\theoremnumbering]
-\newtheorem{corollary}{Corollary}[\theoremnumbering]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[\theoremnumbering]
-\newtheorem{rmk}{Remark}[\theoremnumbering]
-\newtheorem{example}{Example}[\theoremnumbering]
-\newtheorem{notation}{Notation}[\theoremnumbering]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{rmk}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
 
-\newtheorem{problem}{Problem}[\theoremnumbering]
-\newtheorem{problemnochapter}{Problem}
-\newtheorem*{problem*}{Problem}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{problemnochapter}{Problem} % keeps its own numbering if desired
+\newtheorem*{problem*}{Problem}        % unnumbered
 
-\newtheorem{question}{Question}[\theoremnumbering]
+\newtheorem{question}[theorem]{Question}
 \makeatother
 % problem environments
 % use problem for automatic numbering, manualproblem
