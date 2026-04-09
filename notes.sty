@@ -5,7 +5,7 @@
 \usepackage[a4paper, lmargin=1in, rmargin=1in, bmargin=0.9in, tmargin=0.9in]{geometry}
 \usepackage{tikz-cd}
 \usepackage{hyperref}
-\usepackage{cleveref}
+\usepackage[capitalise]{cleveref}
 
 % \usepackage[adobe-utopia]{mathdesign}
 % \usepackage{stickstootext}
@@ -16,8 +16,8 @@
 % \usepackage{latex-style/quiver}
 
 
-\usepackage{titlesec}
-\titleformat{\chapter}[hang]{\Large\bfseries}{}{0pt}{}
+% \usepackage{titlesec}
+% \titleformat{\chapter}[hang]{\Large\bfseries}{}{0pt}{}
 
 \tikzcdset{arrow style=math font}
 
@@ -54,7 +54,9 @@
 \newcommand{\catTop}{\cat{Top}}
 \newcommand{\catLCH}{\cat{LCH}}
 \newcommand{\catSp}{\cat{Sp}}
+\newcommand{\catSpaces}{\cat{S}}
 \newcommand{\catStacks}{\cat{Stacks}}
+\newcommand{\catMan}{\cat{Man}}
 
 \newcommand{\Fun}{\operatorname{Fun}}
 
@@ -92,16 +94,33 @@
 \newcommand{\Gr}{\operatorname{Gr}}
 \newcommand{\Pic}{\operatorname{Pic}}
 
+% category theory
+\newcommand{\colim}{\operatorname{colim}}
+
 % Infinity cats
 \newcommand{\Sh}{\operatorname{Shv}}
 \newcommand{\CoSh}{\operatorname{CoShv}}
 \newcommand{\Map}{\operatorname{Map}}
+\newcommand{\Sing}{\operatorname{Sing}}
 
 % Six functors
 \newcommand{\Corr}{\operatorname{Corr}}
 
 % Lie
 \newcommand{\ad}{\operatorname{ad}}
+
+% Factorization homology
+\newcommand{\orb}{\cat{Orb}}
+\newcommand{\Orb}{\cat{\sh{O}rb}}
+\newcommand{\curlyMan}{\cat{\sh{M}an}}
+\newcommand{\Disk}{\cat{\sh{D}isk}}
+\newcommand{\disk}{\cat{Disk}}
+\newcommand{\ODisk}{\cat{\sh{O}\sh{D}isk}}
+\newcommand{\odisk}{\cat{ODisk}}
+\newcommand{\stacks}{\cat{St}}
+\newcommand{\St}{\cat{\sh{S}t}}
+\newcommand{\Emb}{\operatorname{Emb}}
+\newcommand{\Deltaex}{\Delta_{\operatorname{ex}}}
 
 % Ugly!
 \makeatletter
@@ -132,12 +151,15 @@
 % numbering together
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[\theoremnumbering]
+\newtheorem{theorem*}{Theorem}
+
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
+\newtheorem{definition*}{Definition}
 \newtheorem{rmk}[theorem]{Remark}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{notation}[theorem]{Notation}
@@ -147,6 +169,9 @@
 \newtheorem*{problem*}{Problem}        % unnumbered
 
 \newtheorem{question}[theorem]{Question}
+\newtheorem{direction}[theorem]{Direction}
+\newtheorem{direction*}{Direction}        % unnumbered
+
 \makeatother
 % problem environments
 % use problem for automatic numbering, manualproblem
