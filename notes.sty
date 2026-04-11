@@ -2,7 +2,7 @@
 \usepackage{soul}
 
 % \usepackage[margin=0.75in]{geometry}
-\usepackage[a4paper, lmargin=1in, rmargin=1in, bmargin=0.9in, tmargin=0.9in]{geometry}
+% \usepackage[a4paper, lmargin=1in, rmargin=1in, bmargin=0.9in, tmargin=0.9in]{geometry}
 \usepackage{tikz-cd}
 \usepackage{hyperref}
 \usepackage[capitalise]{cleveref}
@@ -100,8 +100,7 @@
 \newcommand{\Ch}{\operatorname{Ch}}
 
 % category theory
-\newcommand{\colim}{\operatorname{colim}}
-
+\newcommand{\colim}{\mathop{\operatorname{colim}}\displaylimits}
 % Infinity cats
 \newcommand{\Sh}{\operatorname{Shv}}
 \newcommand{\CoSh}{\operatorname{CoShv}}
@@ -163,6 +162,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
+\newtheorem{construction}[theorem]{Construction}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{definition*}{Definition}
 \newtheorem{rmk}[theorem]{Remark}
