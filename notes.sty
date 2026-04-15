@@ -6,7 +6,7 @@
 \usepackage{tikz-cd}
 \usepackage{hyperref}
 \usepackage[capitalise]{cleveref}
-
+\usepackage{xspace}
 % \usepackage[adobe-utopia]{mathdesign}
 % \usepackage{stickstootext}
 % \usepackage[stickstoo,vvarbb]{newtxmath}
@@ -84,6 +84,10 @@
 \newcommand{\tor}{\operatorname{tor}}
 \newcommand{\Tor}{\operatorname{Tor}}
 \newcommand{\id}{\operatorname{id}}
+\newcommand{\pr}{\operatorname{pr}}
+
+% Names
+\newcommand{\Cech}{\v{C}ech\xspace}
 % Algebraic geometry
 \newcommand{\Spec}{\operatorname{Spec}} 
 \newcommand{\sh}[1]{\mathcal{#1}}
@@ -126,6 +130,20 @@
 \newcommand{\Emb}{\operatorname{Emb}}
 \newcommand{\Deltaex}{\Delta_{\operatorname{ex}}}
 \newcommand{\Germ}{\operatorname{Germ}}
+
+
+\newcommand{\triplerightarrows}{%
+  \mathrel{\vcenter{\offinterlineskip
+    \halign{\hfil$\m@th##$\hfil\cr
+      \rightarrow\cr
+      \noalign{\kern-0.1ex}
+      \rightarrow\cr
+      \noalign{\kern-0.1ex}
+      \rightarrow\cr
+    }%
+  }}%
+}
+
 % Ugly!
 \makeatletter
 \@ifclassloaded{report}{%
